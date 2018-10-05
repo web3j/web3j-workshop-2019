@@ -2,6 +2,9 @@ group 'io.blk'
 version '0.0.1'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'io.blk.jaxlondon.NetworkVersion'
 
 sourceCompatibility = 1.8
 
