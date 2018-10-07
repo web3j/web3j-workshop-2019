@@ -4,7 +4,7 @@ version '0.0.1'
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'io.blk.jaxlondon.NetworkVersion'
+mainClassName = 'io.blk.jaxlondon.HelloBlockchainWorld'
 
 sourceCompatibility = 1.8
 
