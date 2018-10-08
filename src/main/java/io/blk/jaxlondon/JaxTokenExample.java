@@ -7,6 +7,7 @@ import org.web3j.crypto.WalletUtils;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import org.web3j.tx.gas.DefaultGasProvider;
+import org.web3j.tx.gas.StaticGasProvider;
 
 
 public class JaxTokenExample {
@@ -21,8 +22,10 @@ public class JaxTokenExample {
                         "<walletfile>");
 
         JaxToken jaxToken = JaxToken.deploy(
-                web3, credentials, DefaultGasProvider.GAS_PRICE, DefaultGasProvider.GAS_LIMIT
-        ).send();
+                web3, credentials,
+                new StaticGasProvider(DefaultGasProvider.GAS_PRICE,
+                        DefaultGasProvider.GAS_LIMIT))
+                .send();
 
         System.out.println(
                 jaxToken.balanceOf(credentials.getAddress()).send());

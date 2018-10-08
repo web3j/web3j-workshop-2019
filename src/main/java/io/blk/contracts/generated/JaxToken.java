@@ -37,7 +37,7 @@ import rx.functions.Func1;
  * <p>Generated with web3j version 3.6.0.
  */
 public class JaxToken extends Contract {
-    private static final String BINARY = "608060405234801561001057600080fd5b50610850806100206000396000f3006080604052600436106100c45763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde0381146100c9578063095ea7b31461015357806318160ddd1461018b57806323b872dd146101b25780632ff2e9dc146101dc578063313ce567146101f15780633d72c71b1461021c578063661884631461023357806370a082311461025757806395d89b4114610278578063a9059cbb1461028d578063d73dd623146102b1578063dd62ed3e146102d5575b600080fd5b3480156100d557600080fd5b506100de6102fc565b6040805160208082528351818301528351919283929083019185019080838360005b83811015610118578181015183820152602001610100565b50505050905090810190601f1680156101455780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015f57600080fd5b50610177600160a060020a0360043516602435610333565b604080519115158252519081900360200190f35b34801561019757600080fd5b506101a06103d5565b60408051918252519081900360200190f35b3480156101be57600080fd5b50610177600160a060020a03600435811690602435166044356103db565b3480156101e857600080fd5b506101a06104fd565b3480156101fd57600080fd5b5061020661050b565b6040805160ff9092168252519081900360200190f35b34801561022857600080fd5b50610231610510565b005b34801561023f57600080fd5b50610177600160a060020a036004351660243561052f565b34801561026357600080fd5b506101a0600160a060020a036004351661061f565b34801561028457600080fd5b506100de61063a565b34801561029957600080fd5b50610177600160a060020a0360043516602435610671565b3480156102bd57600080fd5b50610177600160a060020a0360043516602435610738565b3480156102e157600080fd5b506101a0600160a060020a03600435811690602435166107d1565b60408051808201909152600881527f4a6178546f6b656e000000000000000000000000000000000000000000000000602082015281565b60008115806103635750336000908152600260209081526040808320600160a060020a0387168452909152902054155b151561036e57600080fd5b336000818152600260209081526040808320600160a060020a03881680855290835292819020869055805186815290519293927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929181900390910190a350600192915050565b60005481565b600080600160a060020a03841615156103f357600080fd5b50600160a060020a03841660008181526002602090815260408083203384528252808320549383526001909152902054610433908463ffffffff6107fc16565b600160a060020a038087166000908152600160205260408082209390935590861681522054610468908463ffffffff61080e16565b600160a060020a038516600090815260016020526040902055610491818463ffffffff6107fc16565b600160a060020a03808716600081815260026020908152604080832033845282529182902094909455805187815290519288169391927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef929181900390910190a3506001949350505050565b69021e19e0c9bab240000081565b601281565b69021e19e0c9bab2400000600081815533815260016020526040902055565b336000908152600260209081526040808320600160a060020a03861684529091528120548083111561058457336000908152600260209081526040808320600160a060020a03881684529091528120556105b9565b610594818463ffffffff6107fc16565b336000908152600260209081526040808320600160a060020a03891684529091529020555b336000818152600260209081526040808320600160a060020a0389168085529083529281902054815190815290519293927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929181900390910190a35060019392505050565b600160a060020a031660009081526001602052604090205490565b60408051808201909152600381527f4a41580000000000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a038316151561068857600080fd5b336000908152600160205260409020546106a8908363ffffffff6107fc16565b3360009081526001602052604080822092909255600160a060020a038516815220546106da908363ffffffff61080e16565b600160a060020a0384166000818152600160209081526040918290209390935580518581529051919233927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9281900390910190a350600192915050565b336000908152600260209081526040808320600160a060020a038616845290915281205461076c908363ffffffff61080e16565b336000818152600260209081526040808320600160a060020a0389168085529083529281902085905580519485525191937f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929081900390910190a350600192915050565b600160a060020a03918216600090815260026020908152604080832093909416825291909152205490565b60008282111561080857fe5b50900390565b60008282018381101561081d57fe5b93925050505600a165627a7a723058208a2f3b43cb98fdf99e25c25ae7bed37877125a79bc7f58c57d13f43417b208210029";
+    private static final String BINARY = "608060405234801561001057600080fd5b5061002e3369021e19e0c9bab2400000640100000000610033810204565b610104565b600160a060020a038216151561004857600080fd5b60025461006290826401000000006106dc6100eb82021704565b600255600160a060020a03821660009081526020819052604090205461009590826401000000006106dc6100eb82021704565b600160a060020a0383166000818152602081815260408083209490945583518581529351929391927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9281900390910190a35050565b6000828201838110156100fd57600080fd5b9392505050565b610721806101136000396000f3006080604052600436106100b95763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde0381146100be578063095ea7b31461014857806318160ddd1461018057806323b872dd146101a75780632ff2e9dc146101d1578063313ce567146101e6578063395093511461021157806370a082311461023557806395d89b4114610256578063a457c2d71461026b578063a9059cbb1461028f578063dd62ed3e146102b3575b600080fd5b3480156100ca57600080fd5b506100d36102da565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561010d5781810151838201526020016100f5565b50505050905090810190601f16801561013a5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015457600080fd5b5061016c600160a060020a0360043516602435610311565b604080519115158252519081900360200190f35b34801561018c57600080fd5b5061019561038f565b60408051918252519081900360200190f35b3480156101b357600080fd5b5061016c600160a060020a0360043581169060243516604435610395565b3480156101dd57600080fd5b50610195610432565b3480156101f257600080fd5b506101fb610440565b6040805160ff9092168252519081900360200190f35b34801561021d57600080fd5b5061016c600160a060020a0360043516602435610445565b34801561024157600080fd5b50610195600160a060020a03600435166104f5565b34801561026257600080fd5b506100d3610510565b34801561027757600080fd5b5061016c600160a060020a0360043516602435610547565b34801561029b57600080fd5b5061016c600160a060020a0360043516602435610592565b3480156102bf57600080fd5b50610195600160a060020a03600435811690602435166105a8565b60408051808201909152600881527f4a6178546f6b656e000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a038316151561032857600080fd5b336000818152600160209081526040808320600160a060020a03881680855290835292819020869055805186815290519293927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929181900390910190a350600192915050565b60025490565b600160a060020a03831660009081526001602090815260408083203384529091528120548211156103c557600080fd5b600160a060020a03841660009081526001602090815260408083203384529091529020546103f9908363ffffffff6105d316565b600160a060020a03851660009081526001602090815260408083203384529091529020556104288484846105ea565b5060019392505050565b69021e19e0c9bab240000081565b601281565b6000600160a060020a038316151561045c57600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610490908363ffffffff6106dc16565b336000818152600160209081526040808320600160a060020a0389168085529083529281902085905580519485525191937f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925929081900390910190a350600192915050565b600160a060020a031660009081526020819052604090205490565b60408051808201909152600381527f4a41580000000000000000000000000000000000000000000000000000000000602082015281565b6000600160a060020a038316151561055e57600080fd5b336000908152600160209081526040808320600160a060020a0387168452909152902054610490908363ffffffff6105d316565b600061059f3384846105ea565b50600192915050565b600160a060020a03918216600090815260016020908152604080832093909416825291909152205490565b600080838311156105e357600080fd5b5050900390565b600160a060020a03831660009081526020819052604090205481111561060f57600080fd5b600160a060020a038216151561062457600080fd5b600160a060020a03831660009081526020819052604090205461064d908263ffffffff6105d316565b600160a060020a038085166000908152602081905260408082209390935590841681522054610682908263ffffffff6106dc16565b600160a060020a038084166000818152602081815260409182902094909455805185815290519193928716927fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef92918290030190a3505050565b6000828201838110156106ee57600080fd5b93925050505600a165627a7a7230582014afbd964f33a6f275d0977935b39905ca51a6adfda38cebf3caa26ac03978160029";
 
     public static final String FUNC_NAME = "name";
 
@@ -51,25 +51,23 @@ public class JaxToken extends Contract {
 
     public static final String FUNC_DECIMALS = "decimals";
 
-    public static final String FUNC_SIMPLETOKEN = "SimpleToken";
-
-    public static final String FUNC_DECREASEAPPROVAL = "decreaseApproval";
+    public static final String FUNC_INCREASEALLOWANCE = "increaseAllowance";
 
     public static final String FUNC_BALANCEOF = "balanceOf";
 
     public static final String FUNC_SYMBOL = "symbol";
 
-    public static final String FUNC_TRANSFER = "transfer";
+    public static final String FUNC_DECREASEALLOWANCE = "decreaseAllowance";
 
-    public static final String FUNC_INCREASEAPPROVAL = "increaseApproval";
+    public static final String FUNC_TRANSFER = "transfer";
 
     public static final String FUNC_ALLOWANCE = "allowance";
 
-    public static final Event APPROVAL_EVENT = new Event("Approval", 
+    public static final Event TRANSFER_EVENT = new Event("Transfer", 
             Arrays.<TypeReference<?>>asList(new TypeReference<Address>(true) {}, new TypeReference<Address>(true) {}, new TypeReference<Uint256>() {}));
     ;
 
-    public static final Event TRANSFER_EVENT = new Event("Transfer", 
+    public static final Event APPROVAL_EVENT = new Event("Approval", 
             Arrays.<TypeReference<?>>asList(new TypeReference<Address>(true) {}, new TypeReference<Address>(true) {}, new TypeReference<Uint256>() {}));
     ;
 
@@ -98,11 +96,11 @@ public class JaxToken extends Contract {
         return executeRemoteCallSingleValueReturn(function, String.class);
     }
 
-    public RemoteCall<TransactionReceipt> approve(String _spender, BigInteger _value) {
+    public RemoteCall<TransactionReceipt> approve(String spender, BigInteger value) {
         final Function function = new Function(
                 FUNC_APPROVE, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_spender), 
-                new org.web3j.abi.datatypes.generated.Uint256(_value)), 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(spender), 
+                new org.web3j.abi.datatypes.generated.Uint256(value)), 
                 Collections.<TypeReference<?>>emptyList());
         return executeRemoteCallTransaction(function);
     }
@@ -114,12 +112,12 @@ public class JaxToken extends Contract {
         return executeRemoteCallSingleValueReturn(function, BigInteger.class);
     }
 
-    public RemoteCall<TransactionReceipt> transferFrom(String _from, String _to, BigInteger _value) {
+    public RemoteCall<TransactionReceipt> transferFrom(String from, String to, BigInteger value) {
         final Function function = new Function(
                 FUNC_TRANSFERFROM, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_from), 
-                new org.web3j.abi.datatypes.Address(_to), 
-                new org.web3j.abi.datatypes.generated.Uint256(_value)), 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(from), 
+                new org.web3j.abi.datatypes.Address(to), 
+                new org.web3j.abi.datatypes.generated.Uint256(value)), 
                 Collections.<TypeReference<?>>emptyList());
         return executeRemoteCallTransaction(function);
     }
@@ -138,26 +136,18 @@ public class JaxToken extends Contract {
         return executeRemoteCallSingleValueReturn(function, BigInteger.class);
     }
 
-    public RemoteCall<TransactionReceipt> SimpleToken() {
+    public RemoteCall<TransactionReceipt> increaseAllowance(String spender, BigInteger addedValue) {
         final Function function = new Function(
-                FUNC_SIMPLETOKEN, 
-                Arrays.<Type>asList(), 
+                FUNC_INCREASEALLOWANCE, 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(spender), 
+                new org.web3j.abi.datatypes.generated.Uint256(addedValue)), 
                 Collections.<TypeReference<?>>emptyList());
         return executeRemoteCallTransaction(function);
     }
 
-    public RemoteCall<TransactionReceipt> decreaseApproval(String _spender, BigInteger _subtractedValue) {
-        final Function function = new Function(
-                FUNC_DECREASEAPPROVAL, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_spender), 
-                new org.web3j.abi.datatypes.generated.Uint256(_subtractedValue)), 
-                Collections.<TypeReference<?>>emptyList());
-        return executeRemoteCallTransaction(function);
-    }
-
-    public RemoteCall<BigInteger> balanceOf(String _owner) {
+    public RemoteCall<BigInteger> balanceOf(String owner) {
         final Function function = new Function(FUNC_BALANCEOF, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_owner)), 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(owner)), 
                 Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {}));
         return executeRemoteCallSingleValueReturn(function, BigInteger.class);
     }
@@ -169,65 +159,48 @@ public class JaxToken extends Contract {
         return executeRemoteCallSingleValueReturn(function, String.class);
     }
 
-    public RemoteCall<TransactionReceipt> transfer(String _to, BigInteger _value) {
+    public RemoteCall<TransactionReceipt> decreaseAllowance(String spender, BigInteger subtractedValue) {
+        final Function function = new Function(
+                FUNC_DECREASEALLOWANCE, 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(spender), 
+                new org.web3j.abi.datatypes.generated.Uint256(subtractedValue)), 
+                Collections.<TypeReference<?>>emptyList());
+        return executeRemoteCallTransaction(function);
+    }
+
+    public RemoteCall<TransactionReceipt> transfer(String to, BigInteger value) {
         final Function function = new Function(
                 FUNC_TRANSFER, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_to), 
-                new org.web3j.abi.datatypes.generated.Uint256(_value)), 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(to), 
+                new org.web3j.abi.datatypes.generated.Uint256(value)), 
                 Collections.<TypeReference<?>>emptyList());
         return executeRemoteCallTransaction(function);
     }
 
-    public RemoteCall<TransactionReceipt> increaseApproval(String _spender, BigInteger _addedValue) {
-        final Function function = new Function(
-                FUNC_INCREASEAPPROVAL, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_spender), 
-                new org.web3j.abi.datatypes.generated.Uint256(_addedValue)), 
-                Collections.<TypeReference<?>>emptyList());
-        return executeRemoteCallTransaction(function);
-    }
-
-    public RemoteCall<BigInteger> allowance(String _owner, String _spender) {
+    public RemoteCall<BigInteger> allowance(String owner, String spender) {
         final Function function = new Function(FUNC_ALLOWANCE, 
-                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(_owner), 
-                new org.web3j.abi.datatypes.Address(_spender)), 
+                Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(owner), 
+                new org.web3j.abi.datatypes.Address(spender)), 
                 Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {}));
         return executeRemoteCallSingleValueReturn(function, BigInteger.class);
     }
 
-    public List<ApprovalEventResponse> getApprovalEvents(TransactionReceipt transactionReceipt) {
-        List<Contract.EventValuesWithLog> valueList = extractEventParametersWithLog(APPROVAL_EVENT, transactionReceipt);
-        ArrayList<ApprovalEventResponse> responses = new ArrayList<ApprovalEventResponse>(valueList.size());
-        for (Contract.EventValuesWithLog eventValues : valueList) {
-            ApprovalEventResponse typedResponse = new ApprovalEventResponse();
-            typedResponse.log = eventValues.getLog();
-            typedResponse.owner = (String) eventValues.getIndexedValues().get(0).getValue();
-            typedResponse.spender = (String) eventValues.getIndexedValues().get(1).getValue();
-            typedResponse.value = (BigInteger) eventValues.getNonIndexedValues().get(0).getValue();
-            responses.add(typedResponse);
-        }
-        return responses;
+    public static RemoteCall<JaxToken> deploy(Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
+        return deployRemoteCall(JaxToken.class, web3j, credentials, contractGasProvider, BINARY, "");
     }
 
-    public Observable<ApprovalEventResponse> approvalEventObservable(EthFilter filter) {
-        return web3j.ethLogObservable(filter).map(new Func1<Log, ApprovalEventResponse>() {
-            @Override
-            public ApprovalEventResponse call(Log log) {
-                Contract.EventValuesWithLog eventValues = extractEventParametersWithLog(APPROVAL_EVENT, log);
-                ApprovalEventResponse typedResponse = new ApprovalEventResponse();
-                typedResponse.log = log;
-                typedResponse.owner = (String) eventValues.getIndexedValues().get(0).getValue();
-                typedResponse.spender = (String) eventValues.getIndexedValues().get(1).getValue();
-                typedResponse.value = (BigInteger) eventValues.getNonIndexedValues().get(0).getValue();
-                return typedResponse;
-            }
-        });
+    public static RemoteCall<JaxToken> deploy(Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
+        return deployRemoteCall(JaxToken.class, web3j, transactionManager, contractGasProvider, BINARY, "");
     }
 
-    public Observable<ApprovalEventResponse> approvalEventObservable(DefaultBlockParameter startBlock, DefaultBlockParameter endBlock) {
-        EthFilter filter = new EthFilter(startBlock, endBlock, getContractAddress());
-        filter.addSingleTopic(EventEncoder.encode(APPROVAL_EVENT));
-        return approvalEventObservable(filter);
+    @Deprecated
+    public static RemoteCall<JaxToken> deploy(Web3j web3j, Credentials credentials, BigInteger gasPrice, BigInteger gasLimit) {
+        return deployRemoteCall(JaxToken.class, web3j, credentials, gasPrice, gasLimit, BINARY, "");
+    }
+
+    @Deprecated
+    public static RemoteCall<JaxToken> deploy(Web3j web3j, TransactionManager transactionManager, BigInteger gasPrice, BigInteger gasLimit) {
+        return deployRemoteCall(JaxToken.class, web3j, transactionManager, gasPrice, gasLimit, BINARY, "");
     }
 
     public List<TransferEventResponse> getTransferEvents(TransactionReceipt transactionReceipt) {
@@ -265,22 +238,39 @@ public class JaxToken extends Contract {
         return transferEventObservable(filter);
     }
 
-    public static RemoteCall<JaxToken> deploy(Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
-        return deployRemoteCall(JaxToken.class, web3j, credentials, contractGasProvider, BINARY, "");
+    public List<ApprovalEventResponse> getApprovalEvents(TransactionReceipt transactionReceipt) {
+        List<Contract.EventValuesWithLog> valueList = extractEventParametersWithLog(APPROVAL_EVENT, transactionReceipt);
+        ArrayList<ApprovalEventResponse> responses = new ArrayList<ApprovalEventResponse>(valueList.size());
+        for (Contract.EventValuesWithLog eventValues : valueList) {
+            ApprovalEventResponse typedResponse = new ApprovalEventResponse();
+            typedResponse.log = eventValues.getLog();
+            typedResponse.owner = (String) eventValues.getIndexedValues().get(0).getValue();
+            typedResponse.spender = (String) eventValues.getIndexedValues().get(1).getValue();
+            typedResponse.value = (BigInteger) eventValues.getNonIndexedValues().get(0).getValue();
+            responses.add(typedResponse);
+        }
+        return responses;
     }
 
-    @Deprecated
-    public static RemoteCall<JaxToken> deploy(Web3j web3j, Credentials credentials, BigInteger gasPrice, BigInteger gasLimit) {
-        return deployRemoteCall(JaxToken.class, web3j, credentials, gasPrice, gasLimit, BINARY, "");
+    public Observable<ApprovalEventResponse> approvalEventObservable(EthFilter filter) {
+        return web3j.ethLogObservable(filter).map(new Func1<Log, ApprovalEventResponse>() {
+            @Override
+            public ApprovalEventResponse call(Log log) {
+                Contract.EventValuesWithLog eventValues = extractEventParametersWithLog(APPROVAL_EVENT, log);
+                ApprovalEventResponse typedResponse = new ApprovalEventResponse();
+                typedResponse.log = log;
+                typedResponse.owner = (String) eventValues.getIndexedValues().get(0).getValue();
+                typedResponse.spender = (String) eventValues.getIndexedValues().get(1).getValue();
+                typedResponse.value = (BigInteger) eventValues.getNonIndexedValues().get(0).getValue();
+                return typedResponse;
+            }
+        });
     }
 
-    public static RemoteCall<JaxToken> deploy(Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
-        return deployRemoteCall(JaxToken.class, web3j, transactionManager, contractGasProvider, BINARY, "");
-    }
-
-    @Deprecated
-    public static RemoteCall<JaxToken> deploy(Web3j web3j, TransactionManager transactionManager, BigInteger gasPrice, BigInteger gasLimit) {
-        return deployRemoteCall(JaxToken.class, web3j, transactionManager, gasPrice, gasLimit, BINARY, "");
+    public Observable<ApprovalEventResponse> approvalEventObservable(DefaultBlockParameter startBlock, DefaultBlockParameter endBlock) {
+        EthFilter filter = new EthFilter(startBlock, endBlock, getContractAddress());
+        filter.addSingleTopic(EventEncoder.encode(APPROVAL_EVENT));
+        return approvalEventObservable(filter);
     }
 
     @Deprecated
@@ -301,22 +291,22 @@ public class JaxToken extends Contract {
         return new JaxToken(contractAddress, web3j, transactionManager, contractGasProvider);
     }
 
-    public static class ApprovalEventResponse {
-        public Log log;
-
-        public String owner;
-
-        public String spender;
-
-        public BigInteger value;
-    }
-
     public static class TransferEventResponse {
         public Log log;
 
         public String from;
 
         public String to;
+
+        public BigInteger value;
+    }
+
+    public static class ApprovalEventResponse {
+        public Log log;
+
+        public String owner;
+
+        public String spender;
 
         public BigInteger value;
     }
