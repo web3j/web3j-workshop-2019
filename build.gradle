@@ -19,6 +19,7 @@ repositories {
 
 dependencies {
     compile 'org.web3j:core:3.6.0-SNAPSHOT',
+            'org.web3j:quorum:0.10.0',
             'org.slf4j:slf4j-simple:1.6.1'
     testCompile 'junit:junit:4.12'
 }
