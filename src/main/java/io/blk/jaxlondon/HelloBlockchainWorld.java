@@ -1,6 +1,7 @@
 package io.blk.jaxlondon;
 
 import io.blk.contracts.generated.Greeter;
+import okhttp3.OkHttpClient;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
 import org.web3j.protocol.Web3j;
@@ -11,8 +12,17 @@ import org.web3j.tx.gas.DefaultGasProvider;
 public class HelloBlockchainWorld {
 
     public static void main(String[] args) throws Exception {
-        Web3j web3 = Web3j.build(new HttpService(
-                "https://rinkeby.infura.io/<infura token>"));
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .authenticator((route, response) -> {
+                    String credential = okhttp3.Credentials.basic("epirus", "epirus-rocks");
+                    return response.request().newBuilder().header("Authorization", credential).build();
+                })
+                .build();
+
+        Web3j web3j = Web3j.build(
+                new HttpService(
+                        "https://rinkby-geth.clients.epirus.blk.io", client, false));
 
         Credentials credentials =
                 WalletUtils.loadCredentials(
@@ -20,7 +30,7 @@ public class HelloBlockchainWorld {
                         "<walletfile>.json");
 
         Greeter contract = Greeter.deploy(
-                web3, credentials,
+                web3j, credentials,
                 DefaultGasProvider.GAS_PRICE,
                 DefaultGasProvider.GAS_LIMIT,
                 "Hello blockchain world!").send();
