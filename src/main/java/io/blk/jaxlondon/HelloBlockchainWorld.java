@@ -31,8 +31,7 @@ public class HelloBlockchainWorld {
 
         Greeter contract = Greeter.deploy(
                 web3j, credentials,
-                DefaultGasProvider.GAS_PRICE,
-                DefaultGasProvider.GAS_LIMIT,
+                new DefaultGasProvider(),
                 "Hello blockchain world!").send();
 
         String greeting = contract.greet().send();
