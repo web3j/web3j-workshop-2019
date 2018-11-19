@@ -23,8 +23,8 @@ for target in ${targets}; do
 
     echo "Generating contract bindings"
     web3j solidity generate \
-        ${dirName}/build/${fileName}.bin \
-        ${dirName}/build/${fileName}.abi \
+        -b ${dirName}/build/${fileName}.bin \
+        -a ${dirName}/build/${fileName}.abi \
         -p io.blk.contracts.generated \
         -o ../../java/ > /dev/null
     echo "Complete"
