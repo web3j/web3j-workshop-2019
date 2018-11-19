@@ -1,9 +1,9 @@
 package io.blk.jaxlondon;
 
-import io.blk.contracts.generated.Greeter;
 import okhttp3.OkHttpClient;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
+import org.web3j.model.Greeter;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
 import org.web3j.protocol.http.HttpService;

@@ -1,14 +1,13 @@
 package io.blk.jaxlondon;
 
-import io.blk.contracts.generated.JaxToken;
 
 import okhttp3.OkHttpClient;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
+import org.web3j.model.JaxToken;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import org.web3j.tx.gas.DefaultGasProvider;
-import org.web3j.tx.gas.StaticGasProvider;
 
 
 public class JaxTokenExample {
@@ -33,8 +32,8 @@ public class JaxTokenExample {
 
         JaxToken jaxToken = JaxToken.deploy(
                 web3j, credentials,
-                new StaticGasProvider(DefaultGasProvider.GAS_PRICE,
-                        DefaultGasProvider.GAS_LIMIT))
+                DefaultGasProvider.GAS_PRICE,
+                        DefaultGasProvider.GAS_LIMIT)
                 .send();
 
         System.out.println(
