@@ -18,7 +18,10 @@ repositories {
 }
 
 dependencies {
-    compile 'org.web3j:core:4.5.+',
+    compile 'io.reactivex.rxjava2:rxjava:2.2.0',
+            'org.web3j:core:4.5.+',
             'org.slf4j:slf4j-simple:1.6.1'
+
     testCompile 'junit:junit:4.12'
 }
+

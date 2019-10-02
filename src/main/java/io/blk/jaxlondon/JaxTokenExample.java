@@ -23,20 +23,24 @@ public class JaxTokenExample {
 
         Web3j web3j = Web3j.build(
                 new HttpService(
-                        "https://rinkby-geth.clients.epirus.blk.io", client, false));
+                        "https://epirus:epirus-rocks@geth.epirus.web3labs.com/rinkeby",
+                        client,
+                        false));
 
-
+        // Load personal rinkeby account
         Credentials credentials =
                 WalletUtils.loadCredentials(
                         "<password>",
                         "<walletfile>");
 
+        // Deploy JAXToken
         JaxToken jaxToken = JaxToken.deploy(
                 web3j, credentials,
                 new StaticGasProvider(DefaultGasProvider.GAS_PRICE,
                         DefaultGasProvider.GAS_LIMIT))
                 .send();
 
+        // Query smart contract to find out the balance of our personal account
         System.out.println(
                 jaxToken.balanceOf(credentials.getAddress()).send());
 
