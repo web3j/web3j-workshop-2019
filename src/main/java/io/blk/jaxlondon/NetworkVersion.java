@@ -13,7 +13,7 @@ public class NetworkVersion {
         //FIXME insert your infura token below
         Web3j web3j = Web3j.build(
                 new HttpService(
-                        "https://rinkeby.infura.io/<infura_token>"));
+                        "http://localhost:22000"));
         NetVersion netVersion =
                 web3j.netVersion().send();
         System.out.println("Network Version = " + netVersion.getNetVersion());

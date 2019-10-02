@@ -14,11 +14,11 @@ public class HelloBlockchainWorld {
 
     public static void main(String[] args) throws Exception {
 
-        // TODO: Please run epirus.sh first and verify that block are being created
-        // https://github.com/blk-io/epirus
+        // Connect to Quorum
         Quorum quorum = Quorum.build(new HttpService(
-                "http://localhost:22001"));
+                "http://localhost:22000"));
 
+        // Web3j uses transaction manager to send transactions to quorum
         ClientTransactionManager transactionManager =
                 new ClientTransactionManager(quorum,
                         "0xed9d02e382b34818e88b88a309c7fe71e65f419d",

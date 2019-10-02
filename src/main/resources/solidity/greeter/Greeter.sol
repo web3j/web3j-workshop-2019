@@ -1,11 +1,11 @@
-pragma solidity ^0.4.2;
+pragma solidity >=0.4.21 <0.6.0;
 
 // Example taken from https://www.ethereum.org/greeter, also used in
 // https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial#your-first-citizen-the-greeter
 
 contract Mortal {
     /* Define variable owner of the type address*/
-    address owner;
+    address payable owner;
 
     /* this function is executed at initialization and sets the owner of the contract */
     constructor() public { owner = msg.sender; }
@@ -19,16 +19,16 @@ contract Greeter is Mortal {
     string greeting;
 
     /* this runs when the contract is executed */
-    constructor(string _greeting) public {
+    constructor(string memory _greeting) public {
         greeting = _greeting;
     }
 
-    function newGreeting(string _greeting) public {
+    function newGreeting(string memory _greeting) public {
         greeting = _greeting;
     }
 
     /* main function */
-    function greet() public view returns (string) {
+    function greet() public view returns (string memory) {
         return greeting;
     }
 }
