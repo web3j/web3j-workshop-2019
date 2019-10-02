@@ -36,7 +36,9 @@ public class NetworkVersion {
         // Connecting Web3j to a Blockchain Node
         Web3j web3j = Web3j.build(
                 new HttpService(
-                        "https://epirus:epirus-rocks@geth.epirus.web3labs.com/rinkeby", client, false));
+                        "https://epirus:epirus-rocks@geth.epirus.web3labs.com/rinkeby",
+                        client,
+                        false));
         // Querying the node for the network version
         NetVersion netVersion =
                 web3j.netVersion().send();
