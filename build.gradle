@@ -1,24 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.web3j' version '4.5.0'
+    id 'application'
+    id 'idea'
+    id 'eclipse'
+}
+
 group 'io.blk'
 version '0.0.1'
 
 apply plugin: 'idea'
-apply plugin: 'eclipse'
-apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'io.blk.jaxlondon.NetworkVersion'
+
+mainClassName = 'io.blk.jaxlondon.HelloBlockchainWorld'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven() {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
 }
 
 dependencies {
-    compile 'org.web3j:core:4.5.+',
-            'org.slf4j:slf4j-simple:1.6.1'
+
+    compile 'org.web3j:core:4.5.5',
+            'org.slf4j:slf4j-simple:1.7.25'
     testCompile 'junit:junit:4.12'
 }
