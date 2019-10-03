@@ -5,8 +5,6 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.NetVersion;
 import org.web3j.protocol.http.HttpService;
 
-import java.io.IOException;
-
 /**
  * Check network version
  */

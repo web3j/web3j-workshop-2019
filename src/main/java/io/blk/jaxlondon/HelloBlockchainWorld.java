@@ -3,13 +3,11 @@ package io.blk.jaxlondon;
 import okhttp3.OkHttpClient;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.WalletUtils;
-import org.web3j.model.Greeter;
+import org.web3j.greeter.Greeter;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
 import org.web3j.protocol.http.HttpService;
 import org.web3j.tx.gas.DefaultGasProvider;
-
-import java.math.BigInteger;
 
 public class HelloBlockchainWorld {
 
@@ -24,12 +22,12 @@ public class HelloBlockchainWorld {
 
         Web3j web3j = Web3j.build(
                 new HttpService(
-                        "https://rinkby-geth.clients.epirus.blk.io", client, false));
+                        "https://epirus:epirus-rocks@geth.epirus.web3labs.com/rinkeby", client, false));
 
         Credentials credentials =
                 WalletUtils.loadCredentials(
-                        "<password>",
-                        "<walletfile>.json");
+                        "password1",
+                        "/Users/sebastianraba/Library/Ethereum/testnet/keystore/sebaWallet.json");
 
         Greeter contract = Greeter.deploy(
                 web3j,
