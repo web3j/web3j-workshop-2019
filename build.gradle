@@ -13,7 +13,7 @@ apply plugin: 'idea'
 apply plugin: 'application'
 
 
-mainClassName = 'io.blk.jaxlondon.NetworkVersion'
+mainClassName = 'io.blk.jaxlondon.HelloBlockchainWorld'
 
 sourceCompatibility = 1.8
 
