@@ -23,10 +23,6 @@ contract Greeter is Mortal {
         greeting = _greeting;
     }
 
-    function changeMe(string _greeting) public {
-        greeting = _greeting;
-    }
-
     /* main function */
     function greet() public view returns (string) {
         return greeting;

@@ -38,12 +38,5 @@ public class HelloBlockchainWorld {
 
         String greeting = contract.greet().send();
         System.out.println(greeting);
-
-        TransactionReceipt transactionReceipt =
-                contract.changeMe("Hello new blockchain world!").send();
-        System.out.println(transactionReceipt.getTransactionHash());
-
-        String newGreeting = contract.greet().send();
-        System.out.println(newGreeting);
     }
 }
