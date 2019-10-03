@@ -26,8 +26,8 @@ public class HelloBlockchainWorld {
 
         Credentials credentials =
                 WalletUtils.loadCredentials(
-                        "password1",
-                        "/Users/sebastianraba/Library/Ethereum/testnet/keystore/sebaWallet.json");
+                        "<password>",
+                        "<walletfile>");
 
         Greeter contract = Greeter.deploy(
                 web3j,
