@@ -46,3 +46,4 @@
    On any OS:
 
    Go to https://bintray.com/hyperledger-org/besu-repo/besu#files and download the latest release. Navigate to `besu/bin` inside the archive, besu can be started using the shell script/batch file in that folder.
+
