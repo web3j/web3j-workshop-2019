@@ -34,12 +34,16 @@
    On MacOS/Linux:
 
    ```bash
-   curl -s https://raw.githubusercontent.com/web3j/web3j-installer/master/web3j.sh | bash
+   curl -sL get.web3j.io | bash
    ```
 
    On Windows:
+   
+   ```
+   Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/web3j/web3j-installer/master/installer.ps1'))
+   ```
 
-   Go to https://github.com/web3j/web3j/releases and download the latest release, then extract the zip file and add web3j.bat to your PATH variable.
+   Or, if either of these don't work go to https://github.com/web3j/web3j/releases and download the latest release, then extract the zip file and add web3j to your PATH variable.
 
 5. **Hyperledger Besu**
 
