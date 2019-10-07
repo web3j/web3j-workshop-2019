@@ -54,3 +54,6 @@
 
 #### Slides: 
 https://drive.google.com/file/d/18hCvD_bkseqVY7NCQZ-9SF-zMM45JA4L/view?usp=sharing
+
+Epirus:
+https://rinkeby.explorer.epirus.web3labs.com
